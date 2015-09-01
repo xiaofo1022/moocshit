@@ -71,7 +71,7 @@
 		<div class="class-col clearfix">
 			<div class="fleft hot-title" style="background-color:#10AE58;">
 				<h2>大学英语</h1>
-				<p>
+				<p onclick="seeMore()">
 					共123课 ></p>
 				</p>
 			</div>
@@ -94,7 +94,7 @@
 				</div>
 			</div>
 			<div class="fleft class-list">
-				<div class="class-block">
+				<div class="class-block" onclick="seeMore()">
 					<img src="images/class-10.jpg"/>
 					<h5>查看更多 ></h5></h5>
 				</div>
@@ -106,7 +106,7 @@
 		<div class="class-col clearfix">
 			<div class="fleft hot-title" style="background-color:#4AA3FB;">
 				<h2>托福雅思</h1>
-				<p>
+				<p onclick="seeMore()">
 					共68课 ></p>
 				</p>
 			</div>
@@ -129,7 +129,7 @@
 				</div>
 			</div>
 			<div class="fleft class-list">
-				<div class="class-block">
+				<div class="class-block" onclick="seeMore()">
 					<img src="images/class-10.jpg"/>
 					<h5>查看更多 ></h5></h5>
 				</div>
@@ -141,7 +141,7 @@
 		<div class="class-col clearfix">
 			<div class="fleft hot-title" style="background-color:#0064B7;">
 				<h2>英语4级</h1>
-				<p>
+				<p onclick="seeMore()">
 					共98课 ></p>
 				</p>
 			</div>
@@ -164,7 +164,7 @@
 				</div>
 			</div>
 			<div class="fleft class-list">
-				<div class="class-block">
+				<div class="class-block" onclick="seeMore()">
 					<img src="images/class-10.jpg"/>
 					<h5>查看更多 ></h5></h5>
 				</div>
@@ -184,6 +184,10 @@
 
 <script>
 	$('.carousel').carousel();
+	
+	function seeMore() {
+		location.assign("course.html");
+	}
 </script>
 </body>
 </html>
