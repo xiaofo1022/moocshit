@@ -9,7 +9,6 @@
 <script src="js/bootstrap.min.js"></script>
 <style>
 	body {
-		overflow:hidden;
 	}
 
 	.tbd {
@@ -33,7 +32,7 @@
 	
 	.hot-title {
 		width:180px;
-		height:122px;
+		height:100px;
 		text-align:center;
 		color:#fff;
 	}
@@ -44,7 +43,7 @@
 	}
 	
 	.class-list img {
-		width:220px;
+		width:180px;
 	}
 	
 	.class-list h5:hover {
@@ -56,8 +55,6 @@
 	}
 	
 	.footer {
-		position:absolute;
-		bottom:0;
 		width:100%;
 		height:30px;
 		background-color:#286A46;
@@ -88,6 +85,8 @@
 	
 	.outer-block {
 		display:inline-block;
+		margin-top:40px;
+		margin-bottom:40px;
 		width:100%;
 	}
 	
@@ -97,7 +96,7 @@
 </style>
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="margin-bottom:0;">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<a class="navbar-brand" style="padding-top:10px;">
@@ -126,6 +125,33 @@
 	</div>
 </nav>
 
+<div id="index-loop" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#index-loop" data-slide-to="0" class="active"></li>
+		<li data-target="#index-loop" data-slide-to="1"></li>
+		<li data-target="#index-loop" data-slide-to="2"></li>
+	</ol>
+
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="images/loop/loop-4.jpg">
+		</div>
+		<div class="item">
+			<img src="images/loop/loop-5.png">
+		</div>
+		<div class="item">
+			<img src="images/loop/loop-1.jpg">
+		</div>
+	</div>
+
+	<a class="left carousel-control" href="#index-loop" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	</a>
+	<a class="right carousel-control" href="#index-loop" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	</a>
+</div>
+
 <div class="outer-block">
 	<div class="row-margin">
 		<div class="class-col clearfix">
@@ -151,6 +177,12 @@
 				<div class="class-block">
 					<img src="images/class-3.jpg"/>
 					<h5>大学英语：第3课</h5>
+				</div>
+			</div>
+			<div class="fleft class-list">
+				<div class="class-block">
+					<img src="images/class-10.jpg"/>
+					<h5>查看更多 ></h5></h5>
 				</div>
 			</div>
 		</div>
@@ -182,6 +214,12 @@
 					<h5>考试培训：第3课</h5>
 				</div>
 			</div>
+			<div class="fleft class-list">
+				<div class="class-block">
+					<img src="images/class-10.jpg"/>
+					<h5>查看更多 ></h5></h5>
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -211,19 +249,27 @@
 					<h5>单词强化：第3课</h5>
 				</div>
 			</div>
+			<div class="fleft class-list">
+				<div class="class-block">
+					<img src="images/class-10.jpg"/>
+					<h5>查看更多 ></h5></h5>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
 <div class="footer">
-	<p>
-		Copyright © 2015 Xiaofo All Rights Reserved
-		| 网站首页
-		| 高校联盟
-		| 关于我们
-		| 意见反馈
-		| 友情链接
-	</p>
+	Copyright © 2015 Neau Computer Department All Rights Reserved
+	| 网站首页
+	| 高校联盟
+	| 关于我们
+	| 意见反馈
+	| 友情链接
 </div>
+
+<script>
+	$('.carousel').carousel();
+</script>
 </body>
 </html>
