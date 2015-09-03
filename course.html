@@ -24,8 +24,51 @@
 	}
 	
 	.class-all-list {
-		margin-right:20px;
+		margin-right:10px;
 		text-align:center;
+	}
+	
+	.course-category {
+		display:inline-block;
+		width:980px;
+		height:240px;
+		border:1px solid #ccc;
+		margin-bottom:40px;
+		box-shadow:0px 0px 5px #ccc;
+		padding:20px 0;
+	}
+	
+	.course-block {
+		width:320px;
+		height:200px;
+		border-right:1px solid #ccc;
+		float:left;
+	}
+	
+	.course-block h3 {
+		margin:0;
+		margin-bottom:10px;
+		color:#286A46;
+	}
+	
+	.course-block p {
+		background-color:#ccc;
+		padding:10px;
+		float:left;
+		font-size:12px;
+		color:#fff;
+		margin:10px;
+		margin-bottom:0;
+		margin-right:0;
+	}
+	
+	.course-block p:hover {
+		background-color:#286A46;
+		cursor:pointer;
+	}
+	
+	.course-block p.active {
+		background-color:#286A46;
 	}
 </style>
 </head>
@@ -33,7 +76,7 @@
 <nav class="navbar navbar-default" style="margin-bottom:0;">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" style="padding-top:10px;">
+			<a href="index.html" class="navbar-brand" style="padding-top:10px;">
 				<span class="glyphicon glyphicon-education"></span>
 				慕课学
 			</a>
@@ -41,22 +84,12 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li><a href="index.html">首页</a></li>
-				<li class="dropdown active">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						课程 <span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="course.html">大学英语</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">托福雅思</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">四六级考试</a></li>
-					</ul>
-				</li>
+				<li class="active"><a href="course.html">课程</a></li>
 				<li><a href="#">讨论区</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">登录 / 注册</a></li>
+				<li><a href="#">[ 个人中心 ]</a></li>
+				<li><a href="#">退出</a></li>
 			</ul>
 			<form class="navbar-form navbar-right" role="search">
 				<div class="input-group">
@@ -71,15 +104,46 @@
 </nav>
 
 <div class="outer-block clearfix" style="margin-bottom:0;">
-	<!--
-	<ul class="nav nav-pills nav-justified" style="display:inline-block;width:1000px;">
-		<li role="presentation" class="active"><a href="#">大学英语</a></li>
-		<li role="presentation"><a style="color:#286A46;" href="#">托福雅思</a></li>
-		<li role="presentation"><a style="color:#286A46;" href="#">四六级考试</a></li>
-	</ul>
-	-->
+	<div class="course-category clearfix">
+		<div class="course-block clearfix">
+			<h3>大学英语</h3>
+			<p class="active">听说读写</p>
+			<p>语言学习</p>
+			<p>日常实用英语</p>
+			<p>出国考试英语</p>
+			<p>国内应试英语</p>
+			<p>其它语种</p>
+			<p>单词速记</p>
+			<p>语法详解</p>
+			<p>历年真题回顾</p>
+		</div>
+		<div class="course-block">
+			<h3>托福雅思</h3>
+			<p>出国考试英语</p>
+			<p>国内应试英语</p>
+			<p>其它语种</p>
+			<p>听说读写</p>
+			<p>语言学习</p>
+			<p>日常实用英语</p>
+			<p>语法详解</p>
+			<p>历年真题回顾</p>
+			<p>单词速记</p>
+		</div>
+		<div class="course-block" style="border-right-width:0;">
+			<h3>四六级考试</h3>
+			<p>语言学习</p>
+			<p>日常实用英语</p>
+			<p>语法详解</p>
+			<p>历年真题回顾</p>
+			<p>单词速记</p>
+			<p>出国考试英语</p>
+			<p>国内应试英语</p>
+			<p>其它语种</p>
+			<p>听说读写</p>
+		</div>
+	</div>
 	
-	<div class="row-margin" style="margin-top:10px;">
+	<div class="row-course">
 		<div class="class-col clearfix">
 			<div class="fleft class-all-list">
 				<div class="class-block">
@@ -114,7 +178,7 @@
 		</div>
 	</div>
 	
-	<div class="row-margin">
+	<div class="row-course">
 		<div class="class-col clearfix">
 			<div class="fleft class-all-list">
 				<div class="class-block">
@@ -149,7 +213,7 @@
 		</div>
 	</div>
 	
-	<div class="row-margin">
+	<div class="row-course">
 		<div class="class-col clearfix">
 			<div class="fleft class-all-list">
 				<div class="class-block">
@@ -179,76 +243,6 @@
 				<div class="class-block">
 					<img src="images/class-2.jpg"/>
 					<h5>大学英语：第15课</h5>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="row-margin">
-		<div class="class-col clearfix">
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-1.jpg"/>
-					<h5>大学英语：第16课</h5>
-				</div>
-			</div>
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-2.jpg"/>
-					<h5>大学英语：第17课</h5>
-				</div>
-			</div>
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-3.jpg"/>
-					<h5>大学英语：第18课</h5>
-				</div>
-			</div>
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-1.jpg"/>
-					<h5>大学英语：第19课</h5>
-				</div>
-			</div>
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-2.jpg"/>
-					<h5>大学英语：第20课</h5>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="row-margin">
-		<div class="class-col clearfix">
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-1.jpg"/>
-					<h5>大学英语：第21课</h5>
-				</div>
-			</div>
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-2.jpg"/>
-					<h5>大学英语：第22课</h5>
-				</div>
-			</div>
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-3.jpg"/>
-					<h5>大学英语：第23课</h5>
-				</div>
-			</div>
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-1.jpg"/>
-					<h5>大学英语：第24课</h5>
-				</div>
-			</div>
-			<div class="fleft class-all-list">
-				<div class="class-block">
-					<img src="images/class-2.jpg"/>
-					<h5>大学英语：第25课</h5>
 				</div>
 			</div>
 		</div>

@@ -11,17 +11,47 @@
 	float:left;
 }
 
+.fright {
+	float:right;
+}
+
+.ml10 {
+	margin-left:10px;
+}
+
+.mt10 {
+	margin-top:10px;
+}
+
 .row-margin {
 	margin:20px 0;
 	text-align:center;
 	width:100%;
 }
 
+.row-course {
+	display:inline-block;
+	margin:10px 0;
+	text-align:center;
+	width:980px;
+}
+
 .hot-title {
+	position:relative;
 	width:180px;
-	height:100px;
+	height:146px;
 	text-align:center;
 	color:#fff;
+}
+
+.hot-title h2 {
+	position:absolute;
+	top:40px;
+	left:15px;
+}
+
+.hot-title h2:hover {
+	cursor:pointer;
 }
 
 .class-list {
@@ -59,15 +89,21 @@
 	cursor:pointer;
 }
 
-.class-block h5 {
+.class-block h5, h6 {
 	width:100%;
 	padding:5px;
 	margin:0;
-	position:absolute;
-	bottom:0;
-	background-color:rgba(40, 106, 70, 0.8);
+	background-color:rgba(40, 106, 70, 1.0);
 	color:#fff;
 	font-size:12px;
+}
+
+.class-block h5 {
+	text-align:left;
+}
+
+.class-block h6 {
+	text-align:right;
 }
 
 .class-col {
@@ -83,4 +119,8 @@
 
 .hot-title p:hover {
 	cursor:pointer;
+}
+
+.yellow-star {
+	color:#F6D144;
 }
